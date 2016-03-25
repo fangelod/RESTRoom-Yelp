@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Search by Building</title>
+      	<link rel="stylesheet" href="css/main.css">
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+       <script src="post.js"></script>
+       <script src="review.js"></script>
+       <script src="http://maps.googleapis.com/maps/api/js"></script>
+       <script src="map.js"></script>
+    </head>
+    
+    <body>
+   
+    
+    	<nav class="navbar">
+	            
+	         <!-- Menu -->
+	      	<ul>
+	      		<li><a href="VC_index.html">Home</a></li>
+		        <li><a href="post.html">Post a review</a></li>
+		        <li><a href="#">Contact</a></li>
+		       
+		   	</ul>
+	    </nav> <!-- nav -->
+    	
+	  <div id="review_list"> </div>     
+
+      <div id="search_building_div"  action="">
+      		<h1> Hello</h1>
+      		<br>
+      		
+         <form id="building">
+       
+    		<h3> Search all the reviews for a particular UNC building</h3>     
+	
+				Search by Building:<input type="text" name=building id="txt1" onkeyup="showHint(this.value)">
+				
+				
+				<p>Suggestions: <span id="txtHint"></span></p> 
+				
+				<script>
+				function showHint(str) {
+				  var xhttp;
+				  if (str.length == 0) { 
+				    document.getElementById("txtHint").innerHTML = "";
+				    return;
+				  }
+				  xhttp = new XMLHttpRequest();
+				  xhttp.onreadystatechange = function() {
+				    if (xhttp.readyState == 4 && xhttp.status == 200) {
+				      document.getElementById("txtHint").innerHTML = xhttp.responseText;
+				    }
+				  };
+				  xhttp.open("GET", "namesofbuildings.php?q="+str, true);
+				  xhttp.send();   
+				}
+				</script>
+    
+				<p> <button type=submit > <span>Get the reviews!</span> </button></p>
+			     
+			</form> <!-- building form -->
+		</div>
+			   <div id="show_building"></div>
+			   <table id = "review_table"></table>
+		<div id="googleMap">
+			   <!-- <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu7SuPOnCrIkRw5foFWYbnBU&key=AIzaSyB0rXAVItf1IwluIaaOXHs5l328D9T65uc" allowfullscreen></iframe> -->
+			      
+		</div>	   	      
+	
+    </body>
+    
+</html>

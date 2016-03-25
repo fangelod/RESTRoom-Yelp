@@ -1,0 +1,263 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+   
+body {
+   
+   padding-bottom: 30px;
+   text-align: center;
+   font-family: 'Open Sans', 'sans-serif';
+}
+
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+a {
+   color: white;
+   font-size: 110%;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+   color: darkred;
+}
+   
+   
+/* navigation menu looks */
+ .navbar {
+      /* display: table; */
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      padding: 0.5em;
+     text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+       background: #2d3e50; 
+}
+   
+  
+  .navbar li {
+      float: left;
+      background-color: #2d3e50; 
+      /* border: thin solid black; */
+      list-style-type: none;
+      display: inline;
+      padding: 10px;
+      
+      
+   }
+   
+   
+
+/*login and signup */
+.login_signup {
+   position: relative;
+   float: right;
+   font-size: 30px;
+}
+
+.login_signup button {
+  border-radius: 7px;
+  margin: 5px;
+  width: 100px;
+  height: 35px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  background-color:#3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+  font-family: 'Pacifico', cursive;
+}
+
+.login_signup button:active {
+   transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+   
+@media (max-width: 600px) {
+  .navbar > ul {
+    width: 100%;
+  }
+  .navbar > ul li#responsive-tab {
+    display: block;
+  }
+  .navbar > ul li#responsive-tab a {
+    background: url('images/menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+  .navbar > ul li#responsive-tab a:hover {
+    background-color: #d80041;
+    background-position: 95% 135%;
+  }
+  .navbar > ul li {
+    display: none;
+  }
+  .navbar > ul li.right {
+    float: none;
+  }
+  .navbar > ul li.has-sub {
+    position: relative;
+  }
+  .navbar > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  .navbar > ul li.has-sub ul li {
+    display: block !important;
+  }
+  .navbar > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  .navbar > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  .navbar > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  .navbar > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+
+
+/*Project description */
+.project_description {
+	 margin-top: 90px; 
+}
+
+.project_description h2 {
+    color:red;
+}
+
+.project_description p {
+    font-weight: bold;
+}
+
+.project_goals {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	border: thin solid blue;
+    /* background-color: lightblue; */
+}
+
+/*Cleanest bathrooms */
+/* #cleanest_bathrooms, #hide_bathrooms*/
+button  {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: midnightblue;
+    border-radius: 10px;
+}
+
+/*Best bathrooms table */
+#best_buildings {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Twitter feed */
+.twitter {
+	margin-top: 30px;
+}
+
+
+/* footer */
+footer {
+	bottom:85%;
+}
+
+/*Search review page */
+
+#search_building_div {
+	border: thin solid black;
+	padding-left: 0px;
+	
+}
+
+#search_building_div p {
+    font-weight: bold;
+}
+
+#building button {
+	width: 120px;
+	height: 40px;
+}
+
+#review_table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#review_table tr:nth-child(odd) {
+	background-color: #efefef;
+}
+
+#googleMap {
+	margin-top: 20px;
+	width: 600px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*Post review page */
+.post_building {
+    margin-top: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
