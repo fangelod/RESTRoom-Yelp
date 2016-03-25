@@ -1,4 +1,4 @@
-var url_base = "http://wwwp.cs.unc.edu/Courses/comp426-f15/users/dominno/Codiad/workspace/cs426/FP/SS/";
+var url_base = "http://fangelod.github.io/RESTRoom-Yelp/Server-Side/";
 
 
 
